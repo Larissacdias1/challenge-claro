@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Produto" [(ngModel)]="product.produto" name="Produto">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor (R$)" [(ngModel)]="product.valor" name="Valor">
+        </mat-form-field>
+        <mat-form-field>
+
+            <mat-label>Selecione a categoria</mat-label>
+            <mat-select [(value)]="product.categoria" disableRipple>
+                <mat-option value="Internet">Internet</mat-option>
+                <mat-option value="Tv">TV</mat-option>
+                <mat-option value="Celular">Celular</mat-option>
+                <mat-option value="Fixo">Fixo</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createProduct()" class="btnSalvar">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "produto": "MIX HD",
+      "valor": "79.99",
+      "categoria": "Tv",
+      "id": 1
+    },
+    {
+      "produto": "CLARO NET VIRTUA",
+      "valor": "99.99",
+      "categoria": "Internet",
+      "id": 2
+    },
+    {
+      "produto": "PREZAO",
+      "valor": "49.90",
+      "categoria": "Celular",
+      "id": 3
+    }
+  ]
+}
